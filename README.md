@@ -7,11 +7,13 @@ Project Setup
 command:npx init
 install dependencies :
 npm install mongoose cors body-parser express
+-----------
 Step:2
 ---------
 setup the mongodb connection;
 Use the provided URI or a local MongoDB instance.
 import data from csv file to mongodb database
+-----------
 step  :3
 -----------
 craete folder model,controller and routes
@@ -28,6 +30,7 @@ initialize the react project
 command:npx create-react-app frontend
 install all dependencies:
 npm install axios react-router-dom bootstrap
+---------
 step:2
 ---------
 core features
@@ -41,6 +44,7 @@ Transaction Status Check:
 Input custom_order_id and fetch the status using /check-status.
 Update Status functionality
  Mode Toggle functinality:
+ ---------
 Step 3:
 ------
 Hosting
