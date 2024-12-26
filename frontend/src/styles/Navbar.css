@@ -1,0 +1,116 @@
+/* Navbar.css */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar.light {
+    background-color: #f8f9fa; /* Light background for navbar */
+  }
+  
+  .navbar.dark {
+    background-color: #343a40; /* Dark background for navbar */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links.active {
+    display: block;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+  }
+  
+  .nav-link {
+    color: #000; /* Default text color */
+    text-decoration: none;
+  }
+  
+  .navbar.dark .nav-link {
+    color: #fff; /* White text for links in dark mode */
+  }
+  
+  .navbar.dark .color-toggle-btn {
+    color: white; /* White text for button in dark mode */
+  }
+  
+  .color-toggle-btn {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .color-toggle-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .navbar.dark .color-toggle-btn:hover {
+    background-color: #004085; /* Darker blue when hovered in dark mode */
+  }
+  
+  /* Hamburger Icon (Visible only on mobile screens) */
+  .navbar-toggler {
+    display: none;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .navbar-toggler.active {
+    color: #fff; /* Change color when active */
+  }
+  
+  @media (max-width: 768px) {
+    /* Make the navbar links stack on top of each other */
+    .navbar-links {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+  
+    .navbar-brand {
+      font-size: 1.5rem;
+    }
+  
+    .nav-item {
+      margin: 10px 0;
+    }
+  
+    /* Make the hamburger icon visible on small screens */
+    .navbar-toggler {
+      display: block;
+    }
+  }
+  
